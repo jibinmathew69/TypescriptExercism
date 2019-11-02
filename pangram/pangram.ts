@@ -6,12 +6,9 @@ class Pangram{
     }
 
     public isPangram(){
-        let statementArray = this.statement.split("")
-        let statementSet = new Set(statementArray)
-        let ascii = new Set(['a', 'b', 'c', 'd', 'e', 'f',
-         'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
-        'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'])
-
+        
+        let statementSet = new Set(this.statement)
+        let ascii = new Set('abcdefghijklmnopqrstuvwxyz')
         return [...ascii].every(value => statementSet.has(value))
     }
 }
