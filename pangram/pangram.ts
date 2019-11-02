@@ -7,9 +7,6 @@ class Pangram{
 
     public isPangram(){
         let statementArray = this.statement.split("")
-        // statementArray = statementArray.filter((character: string) => {
-        //     return character >= 'A' && character <= 'Z'
-        // })
         let statementSet = new Set(statementArray)
         let ascii = new Set(['a', 'b', 'c', 'd', 'e', 'f',
          'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
